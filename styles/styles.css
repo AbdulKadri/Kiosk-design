@@ -974,7 +974,6 @@ input::-webkit-inner-spin-button {
 @media (orientation: landscape) and (min-height: 500px) {
     body {
         width: auto;
-        overflow: hidden;
     }
 
     /* For all pages */
