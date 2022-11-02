@@ -948,6 +948,10 @@ input::-webkit-inner-spin-button {
         margin-top: 5%;
     }
 
+    .payment-method-img {
+        height: 20%;
+    }
+
     .payment_page h4 {
         margin-top: 1%;
     }
@@ -965,8 +969,9 @@ input::-webkit-inner-spin-button {
     }
 
     .privacy_page .policy {
+        height: 65vh;
+        overflow: scroll;
         margin-top: 1%;
-        font-size: 0.8rem;
     }
 }
 
@@ -1165,7 +1170,7 @@ input::-webkit-inner-spin-button {
     }
 
     .error_page .main-image {
-        height: 20%;
+        height: 15%;
         margin-top: 0;
     }
 
@@ -1181,7 +1186,7 @@ input::-webkit-inner-spin-button {
 
     .payment-method-img {
         margin-top: 0;
-        height: 15%;
+        height: 10%;
     }
 
     .payment_page h4 {
@@ -1202,8 +1207,9 @@ input::-webkit-inner-spin-button {
     }
 
     .privacy_page .policy {
+        height: 60vh;
+        overflow: scroll;
         margin-top: 1%;
-        font-size: 0.5rem;
     }
 }
 
@@ -1286,6 +1292,7 @@ input::-webkit-inner-spin-button {
 
     /* Privacy Page */
     .privacy_page .policy {
-        font-size: 0.65rem;
+        height: 60vh;
+        overflow: scroll;
     }
 }
