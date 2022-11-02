@@ -779,7 +779,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Smaller Tablet Screens Resize; Portrait Mode */
-@media (min-width: 500px) and (max-width: 900px) and (min-height: 920px) {
+@media (min-width: 500px) and (max-width: 1024px) and (min-height: 850px) {
     body {
         width: auto;
     }
