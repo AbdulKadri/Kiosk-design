@@ -1207,7 +1207,7 @@ input::-webkit-inner-spin-button {
     }
 
     .privacy_page .policy {
-        height: 60vh;
+        height: 55vh;
         overflow: scroll;
         margin-top: 1%;
     }
