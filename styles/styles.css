@@ -1002,11 +1002,11 @@ input::-webkit-inner-spin-button {
 
     .welcome_page .logo {
         margin-top: 1%;
-        height: 7%;
+        height: 10vh;
     }
 
     .welcome_page .welcome-icons {
-        margin-top: 0;
+        margin-top: 5%;
     }
 
     .welcome_page .welcome-icons img {
@@ -1016,17 +1016,21 @@ input::-webkit-inner-spin-button {
 
     .welcome_page h1 {
         margin-top: -2%;
-        height: 10vh;
+        height: 8vh;
+        font-size: 3rem;
     }
 
     .welcome_page .centered-text {
         margin-top: 1%;
-        height: 10vh;
+        height: 8vh;
+        font-size: 0.9rem;
     }
 
     .welcome_page h2 {
         position: absolute;
         bottom: 0;
+        left: 0;
+        right: 0;
     }
 
     /* Amount Page */
@@ -1039,7 +1043,7 @@ input::-webkit-inner-spin-button {
     }
 
     .amount-item {
-        height: 19vh;
+        height: 17vh;
     }
 
     .amount-item svg {
@@ -1057,7 +1061,7 @@ input::-webkit-inner-spin-button {
     }
 
     .categories-item {
-        height: 22vh;
+        height: 20vh;
     }
 
     .categories-item .image-section {
