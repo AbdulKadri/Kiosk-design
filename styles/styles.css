@@ -908,6 +908,16 @@ input::-webkit-inner-spin-button {
     .congrats_page {
         overflow: hidden;
         position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .failed_page .main-image {
+        height: 20vh;
+    }
+
+    .failed_page h1 {
+        text-align: center;
     }
 
     /* Failed Page */
@@ -964,6 +974,7 @@ input::-webkit-inner-spin-button {
 @media (orientation: landscape) and (min-height: 500px) {
     body {
         width: auto;
+        overflow: hidden;
     }
 
     /* For all pages */
@@ -1099,7 +1110,7 @@ input::-webkit-inner-spin-button {
     }
 
     .donation-basis-item {
-        height: 14.5vh;
+        height: 14vh;
     }
 
     .donation-basis-item-amount {
@@ -1123,6 +1134,16 @@ input::-webkit-inner-spin-button {
     .congrats_page {
         overflow: hidden;
         position: static;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .failed_page .main-image {
+        height: 20vh;
+    }
+
+    .failed_page h1 {
+        text-align: center;
     }
 
     /* Failed Page */
