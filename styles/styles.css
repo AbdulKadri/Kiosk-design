@@ -888,7 +888,7 @@ input::-webkit-inner-spin-button {
     }
 
     .donation_basis .bottom-buttons {
-        margin-top: 15%;
+        margin-top: 5%;
     }
 
     .donation-basis-item {
@@ -1085,17 +1085,21 @@ input::-webkit-inner-spin-button {
         margin-top: 3%;
     }
 
+    .payment-success-section {
+        margin-top: 3%;
+    }
+
     /* Donation Page */
     .donation_basis {
         overflow: hidden;
     }
 
     .donation_basis .bottom-buttons {
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .donation-basis-item {
-        height: 15vh;
+        height: 14.5vh;
     }
 
     .donation-basis-item-amount {
