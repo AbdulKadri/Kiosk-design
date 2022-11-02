@@ -765,7 +765,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Ipad/Surface Pro and bigger tablets settings; Portait Mode */
-@media (width: 1024px) or (width:912px) {
+@media (min-width: 900px) {
     body {
         width: auto;
     }
@@ -846,7 +846,7 @@ input::-webkit-inner-spin-button {
     }
 
     .amount-item {
-        height: 19vh;
+        height: 17vh;
     }
 
     .amount-item svg {
@@ -854,7 +854,7 @@ input::-webkit-inner-spin-button {
     }
 
     .custom-amount {
-        height: 10vh;
+        height: 8vh;
     }
 
     /* Categories Page  */
@@ -863,7 +863,7 @@ input::-webkit-inner-spin-button {
     }
 
     .categories-item {
-        height: 22vh;
+        height: 20vh;
     }
 
     .categories-item .image-section {
@@ -959,7 +959,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Smaller Tablet Screens Resize; Landscape Mode */
-@media (orientation: landscape) and (min-height: 750px) {
+@media (orientation: landscape) and (min-height: 500px) {
     body {
         width: auto;
     }
