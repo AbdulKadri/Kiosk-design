@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Succesful</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body class="congrats_page">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="congrats_page">
     <section class="top-bar">
-        <img src="assets/masjid-logo.svg" alt="Masjid Toronto Logo">
+      <img src="assets/masjid-logo.svg" alt="Masjid Toronto Logo" />
     </section>
 
-    <img class="main-image" src="assets/payment-succesful.svg" alt="Payment Succesful">
+    <img
+      class="main-image"
+      src="assets/payment-succesful.svg"
+      alt="Payment Succesful"
+    />
 
     <h1>Thank You - Payment Received!</h1>
 
     <section class="payment-success-section">
-        <ul class="payment-success-section-column-1">
-            <li>Used</li>
-            <li>Card Number</li>
-            <li>Amount Paid</li>
-            <li>Transactions id</li>
-        </ul>
+      <ul class="payment-success-section-column-1">
+        <li>Used</li>
+        <li>Card Number</li>
+        <li>Amount Paid</li>
+        <li>Transactions id</li>
+      </ul>
 
-        <ul class="payment-success-section-column-2">
-            <li>Credit Card</li>
-            <li>**** **** **** ****</li>
-            <li class="amount">$1500/Monthly</li>
-            <li>545496165564654</li>
-        </ul>
+      <ul class="payment-success-section-column-2">
+        <li>Credit Card</li>
+        <li>**** **** **** ****</li>
+        <li class="amount">$1500/Monthly</li>
+        <li>545496165564654</li>
+      </ul>
     </section>
 
     <div class="email-form">
-        <input type="text" placeholder="Enter email or phone # to get receipt">
-        <button>Send</button>
+      <input type="text" placeholder="Enter email or phone # to get receipt" />
+      <button>Send</button>
     </div>
 
     <section class="bottom-section">
-        <div class="bottom-column-1">
-            <div class="breadcrumbs">
-                <img src="assets/circle-selector.svg" alt="Circle Selector">
-                <img src="assets/circle-selector.svg" alt="Circle Selector">
-                <img src="assets/circle-selector.svg" alt="Circle Selector">
-                <img src="assets/circle-selector.svg" alt="Circle Selector">
-                <img src="assets/current-breadcrumb.svg" alt="Current Breadcrumb">
-            </div>
-            <h3>
-                Payment Succesful
-            </h3>
+      <div class="bottom-column-1">
+        <div class="breadcrumbs">
+          <img src="assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="assets/current-breadcrumb.svg" alt="Current Breadcrumb" />
         </div>
+        <h3>Payment Succesful</h3>
+      </div>
 
-        <a class="bottom-column-2" href="privacy.html">
-            Privacy Policy
-        </a>
+      <a class="bottom-column-2" href="privacy.html"> Privacy Policy </a>
     </section>
-</body>
+
+    <section class="popup-modal-container" id="popup-modal-container">
+      <div class="popup-modal" id="popup-modal">
+        <div class="popup-modal-content">
+          <div class="authorization-container">
+            <svg
+              width="121"
+              height="82"
+              viewBox="0 0 121 82"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M106.22 0H14.7799C6.63062 0 0 6.61891 0 14.7538V67.2462C0 75.3811 6.63062 82 14.7799 82H106.22C114.369 82 121 75.3811 121 67.2462V14.7554C121.002 6.61891 114.371 0 106.22 0ZM98.9981 9.62517L60.5 34.3843L22.0019 9.62517H98.9981ZM106.22 72.3764H14.7799C11.9467 72.3764 9.6422 70.0744 9.6422 67.2478V15.0281L57.5254 45.7645C57.5897 45.8046 57.6588 45.8318 57.7246 45.8687C57.7938 45.9072 57.8645 45.9441 57.9352 45.9794C58.3064 46.1703 58.6889 46.3243 59.0794 46.4254C59.1196 46.4366 59.1597 46.4414 59.1999 46.451C59.629 46.5521 60.0629 46.6147 60.4968 46.6147H60.5C60.5032 46.6147 60.5064 46.6147 60.5064 46.6147C60.9403 46.6147 61.3742 46.5537 61.8033 46.451C61.8435 46.4414 61.8837 46.4366 61.9238 46.4254C62.3143 46.3243 62.6952 46.1703 63.068 45.9794C63.1387 45.9441 63.2095 45.9072 63.2786 45.8687C63.3444 45.8318 63.4136 45.8046 63.4778 45.7645L111.361 15.0281V67.2462C111.359 70.0744 109.053 72.3764 106.22 72.3764Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="popup-modal-header">
+            <h2>Please Enter Your Email Address</h2>
+          </div>
+          <div class="popup-modal-body">
+            <p>
+              To receive your tax receipt, please provide your email address so
+              that we can send you a link to complete the required form. Kindly
+              note that the tax receipt cannot be issued without the completion
+              of this form.
+            </p>
+          </div>
+          <div class="popup-modal-footer-container-email">
+            <input
+              class="popup-modal-footer-input"
+              type="text"
+              placeholder="Please Enter Email Address"
+            />
+            <button class="popup-modal-button">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const popupModalContainer = document.getElementById(
+          "popup-modal-container"
+        );
+
+        setTimeout(() => {
+          popupModalContainer.style.display = "flex";
+          countdownTimer();
+        }, 1000);
+      });
+    </script>
+  </body>
 </html>
