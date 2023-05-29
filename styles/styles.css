@@ -66,6 +66,40 @@ footer {
   border-top: #ffffff61 1px solid;
 }
 
+.breadcrumbs {
+  display: flex;
+  gap: 24px;
+}
+
+.breadcrumbs h3 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.bottom-column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 16px;
+}
+
+.bottom-column-2 {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  width: 141px;
+  height: 46px;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
 /* Welcome Page*/
 .welcome-icons img {
   height: 15rem;
@@ -111,7 +145,7 @@ footer {
   justify-content: space-between;
 }
 
-.payment_lookup_page .close-btn {
+.close-btn {
   color: white;
   background-color: transparent;
   border: 1px solid white;
@@ -235,46 +269,44 @@ footer {
   font-weight: 900;
 }
 
-.top-bar {
-  width: 100%;
+/* Categories & Amount Pages */
+.categories_page .content {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 48px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 60px;
 }
 
-.top-bar img {
-  margin-top: 56px;
-  width: 272px;
-  height: 65px;
+.categories_page .content > *,
+.amount_page .content > * {
+  flex: 0;
 }
 
-.page-title {
-  font-weight: 700;
+.categories_page h1,
+.amount_page h1 {
   font-size: 48px;
-  text-align: center;
-  margin-top: 96px;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
-.main-section {
-  width: 512px;
-  margin: 56px auto 0;
-}
-
-.categories-section {
+.categories-section,
+.amount-section {
   display: grid;
-  grid-template-columns: repeat(2, 232px);
+  grid-template-columns: repeat(2, 250px);
   gap: 48px;
 }
 
 .categories-item {
   border: 1px solid #dddddd;
   border-radius: 8px;
-  height: 299px;
+  height: 300px;
   background-color: white;
 }
 
 .categories-item .image-section {
-  background-color: #dddddd;
+  background-color: #e2e5e3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,15 +316,16 @@ footer {
   transition: ease 0.3s;
 }
 
-.categories-item:hover .image-section {
-  background-color: #0e7b3d10;
+.categories-item .image-section:hover {
+  background-color: rgba(14, 123, 61, 0.2);
 }
+
 .categories-item .image-section svg {
   fill: #6c7670;
 }
 
 .categories-item:hover .image-section svg {
-  fill: #0e7b3d;
+  fill: var(--primary-color);
 }
 
 .categories-item .text-section {
@@ -300,7 +333,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: black;
-  height: calc(299px - 224px);
+  height: 75px;
 }
 
 .categories-item .text-section h2 {
@@ -309,92 +342,22 @@ footer {
   font-size: 20px;
 }
 
-.selector {
-  margin: 56px auto 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.selector img:first-child {
-  margin-right: 18px;
-}
-
-.bottom-buttons {
-  margin-top: 71px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.button-item {
-  width: 232px;
-  height: 82px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 500;
-  font-size: 20px;
-  text-decoration: none;
-  border: 2px solid #fff7f7;
-  border-radius: 8px;
-}
-
-.button-item img {
-  margin-right: 18px;
-}
-
-.breadcrumbs {
-  display: flex;
-}
-
-.breadcrumbs img {
-  margin-left: 24px;
-}
-
-.breadcrumbs img:first-child {
-  margin-left: 0;
-}
-
-.breadcrumbs h3 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.bottom-column-2 {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 8px;
-  width: 141px;
-  height: 46px;
-  font-weight: 600;
-  font-size: 15px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-}
-
-.amount_page .categories-section {
-  column-gap: 48px;
-  row-gap: 40px;
+.amount-section {
+  place-content: center;
+  place-items: center;
+  margin-top: 45px;
 }
 
 .amount-item {
-  background-color: white;
+  background-color: #e2e5e3;
   border-radius: 8px;
   border: 3px solid white;
-  width: 232px;
+  width: 100%;
   height: 254px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: ease 0.3s;
-  text-decoration: none;
 }
 
 .amount-item h2 {
@@ -433,14 +396,14 @@ footer {
 }
 
 .custom-amount span {
-  width: 112px;
-  background-color: #dddddd;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  background-color: rgba(14, 123, 61, 0.5);
+  width: 112px;
   font-weight: 500;
   font-size: 32px;
-  color: #8d8d8d;
 }
 
 .custom-amount input {
@@ -452,13 +415,139 @@ footer {
   padding: 36px 24px;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+.amount_page .bottom-column-2 {
+  width: 121px;
+  border: 2px solid white;
+  gap: 1rem;
+  padding: 10px;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+/* Payment Page */
+.payment_page .content {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 610px;
+  height: 300px;
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  background-image: url(../assets/payment-background.png);
+  background-size: cover;
+  padding: 40px 20px 20px 40px;
+}
+
+.payment-card h1 {
+  align-self: start;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.money-amount {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.money-amount h2 {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.hide-button {
+  border: white 1px solid;
+  color: white;
+  background-color: transparent;
+  width: 195px;
+  height: 48px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.campaign {
+  align-self: start;
+}
+
+.campaign,
+.donation-plan {
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+
+.campaign span,
+.donation-plan span {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.payment_page .final-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.payment-method-img {
+  margin-top: 3rem;
+}
+
+.payment_page h4 {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 1rem;
+}
+
+/* Payment Succeeded Modal */
+.success-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  font-size: 300px;
+}
+
+/* Payment Success Page */
+.payment_success_page .content {
+  justify-content: center;
+}
+
+.payment_success_page .content > * {
+  flex: 0;
+}
+
+.payment_success_page h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 75px;
+}
+
+.payment_success_page .centered-text {
+  margin-top: 30px;
+}
+
+.payment_success_page .centered-text span {
+  font-weight: 900;
 }
 
 .donation-basis-item {
@@ -516,103 +605,6 @@ input::-webkit-inner-spin-button {
   margin-top: 110px;
 }
 
-.payment-card {
-  width: 610px;
-  margin: 117px auto 0;
-  color: white;
-  background-color: #0e7b3d;
-  border-radius: 16px;
-  background-image: url(../assets/payment-background.png);
-  background-size: cover;
-  height: 293px;
-  display: flex;
-  flex-direction: column;
-  padding: 46px 10px 26px 45px;
-  position: relative;
-}
-
-.payment-card h1 {
-  margin: 0;
-  font-weight: 400;
-  font-size: 32px;
-}
-
-.money-amount {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.money-amount h2 {
-  font-weight: 700;
-  font-size: 60px;
-  margin-top: 26px;
-  margin-bottom: 0;
-}
-
-.hide-button {
-  border: white 1px solid;
-  color: white;
-  width: 195px;
-  height: 48px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-  font-size: 20px;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-
-.hide-button img {
-  margin-right: 20px;
-}
-
-.campaign,
-.donation-plan {
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-weight: 500;
-  font-size: 24px;
-  color: white;
-}
-
-.campaign span,
-.donation-plan span {
-  font-weight: 400;
-  opacity: 0.7;
-}
-
-.donation-plan {
-  margin-top: 13px !important;
-}
-
-.payment-methods {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  bottom: 20px;
-  right: 10px;
-  position: absolute;
-}
-
-.payment-method-img {
-  margin: 88px auto 0;
-  display: flex;
-}
-
-.payment_page h4 {
-  font-weight: 400;
-  font-size: 36px;
-  color: white;
-  text-align: center;
-}
-
-.payment_page .bottom-section {
-  margin-top: 113px;
-}
-
 .congrats_page {
   position: relative;
 }
@@ -628,51 +620,6 @@ input::-webkit-inner-spin-button {
   font-size: 40px;
   color: white;
   margin: 48px auto 0;
-}
-
-.payment-success-section {
-  margin: 96px auto 0;
-  width: 571px;
-  justify-content: space-between;
-  display: flex;
-}
-
-.payment-success-section-column-1 {
-  text-align: left;
-  padding: 0;
-  list-style: none;
-  width: 49%;
-  margin: 0;
-}
-
-.payment-success-section-column-1 li {
-  margin-bottom: 24px;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.payment-success-section-column-2 {
-  text-align: right;
-  padding: 0;
-  list-style: none;
-  width: 49%;
-  margin: 0;
-}
-
-.payment-success-section-column-2 li {
-  margin-bottom: 24px;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-.payment-success-section-column-2 li:last-child,
-.payment-success-section-column-1 li:last-child {
-  margin-bottom: 0;
-}
-
-.payment-success-section-column-2 .amount {
-  font-weight: 700;
-  font-size: 24px;
 }
 
 .email-form {
@@ -934,14 +881,14 @@ input::-webkit-inner-spin-button {
 
 .popup-modal-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   top: 0;
   left: 0;
-  align-items: center;
-  justify-content: center;
 }
 
 .popup-modal {
@@ -1056,6 +1003,11 @@ input::-webkit-inner-spin-button {
     margin-top: 105px;
   }
 
+  .email_page .input-container,
+  .email_page .email-btn {
+    margin-top: 60px;
+  }
+
   .email_page .input-container {
     width: 500px;
     padding: 0 24px 0 36px;
@@ -1068,5 +1020,10 @@ input::-webkit-inner-spin-button {
 
   .email_page .email-input::placeholder {
     font-size: 16px;
+  }
+
+  /* Payment Success Page */
+  .payment_success_page .close-btn {
+    margin-top: 50px;
   }
 }

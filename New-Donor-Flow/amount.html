@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amount</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Select an Amount</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,15 +19,21 @@
     />
   </head>
   <body class="amount_page">
-    <section class="top-bar">
-      <img src="assets/masjid-logo.svg" alt="Masjid Toronto Logo" />
-    </section>
+    <header>
+      <div class="logo-container">
+        <img
+          src="../assets/masjid-logo.svg"
+          alt="Masjid Toronto Logo"
+          class="logo"
+        />
+      </div>
+    </header>
 
-    <h1 class="page-title">Donation Cause</h1>
+    <main class="content">
+      <h1 class="page-title">Select Amount</h1>
 
-    <section class="main-section">
-      <div class="categories-section">
-        <a class="amount-item" href="#">
+      <div class="amount-section">
+        <button class="amount-item">
           <svg
             width="72"
             height="72"
@@ -46,9 +53,9 @@
             </g>
           </svg>
           <h2>$750</h2>
-        </a>
+        </button>
 
-        <a class="amount-item" href="#">
+        <button class="amount-item">
           <svg
             width="72"
             height="72"
@@ -68,9 +75,9 @@
             </g>
           </svg>
           <h2>$1500</h2>
-        </a>
+        </button>
 
-        <a class="amount-item" href="#">
+        <button class="amount-item">
           <svg
             width="72"
             height="72"
@@ -90,9 +97,9 @@
             </g>
           </svg>
           <h2>$2000</h2>
-        </a>
+        </button>
 
-        <a class="amount-item" href="#">
+        <button class="amount-item">
           <svg
             width="72"
             height="72"
@@ -112,119 +119,34 @@
             </g>
           </svg>
           <h2>$2500</h2>
-        </a>
+        </button>
       </div>
 
       <div class="custom-amount">
         <span> $ </span>
         <input type="number" placeholder="Custom Amount" />
       </div>
+    </main>
 
-      <div class="bottom-buttons">
-        <a href="index.html" class="button-item">
-          <img src="assets/back.svg" alt="Back Button" />
-          Back
-        </a>
+    <footer class="bottom-section">
+      <a href="categories.html" class="bottom-column-2">
+        <img src="../assets/back.svg" alt="Back Button" />
+        Back
+      </a>
 
-        <a href="index.html" class="button-item">
-          <img src="assets/home.svg" alt="Back Button" />
-          Home
-        </a>
-      </div>
-    </section>
-
-    <section class="bottom-section">
       <div class="bottom-column-1">
         <div class="breadcrumbs">
-          <img src="assets/circle-selector.svg" alt="Circle Selector" />
-          <img src="assets/current-breadcrumb.svg" alt="Current Breadcrumb" />
-          <img src="assets/circle-selector.svg" alt="Circle Selector" />
-          <img src="assets/circle-selector.svg" alt="Circle Selector" />
-          <img src="assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="../assets/circle-selector.svg" alt="Circle Selector" />
+          <img
+            src="../assets/current-breadcrumb.svg"
+            alt="Current Breadcrumb"
+          />
+          <img src="../assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="../assets/circle-selector.svg" alt="Circle Selector" />
+          <img src="../assets/circle-selector.svg" alt="Circle Selector" />
         </div>
         <h3>Amount</h3>
       </div>
-
-      <a class="bottom-column-2" href="privacy.html"> Privacy Policy </a>
-    </section>
-
-    <section class="popup-modal-container" id="popup-modal-container">
-      <div class="popup-modal" id="popup-modal">
-        <div class="popup-modal-content">
-          <div class="authorization-container">
-            <svg
-              width="133"
-              height="133"
-              viewBox="0 0 133 133"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M116.978 26.5074C97.2873 22.2521 77.6778 18.0104 57.9599 13.7416C52.363 33.3375 46.7932 52.8928 41.1692 72.5971C40.5865 71.3233 40.0715 70.1985 39.5701 69.0737C37.9845 65.6044 36.399 62.1351 34.8541 58.6523C34.6915 58.2864 34.6372 57.785 34.7592 57.4055C40.5865 38.555 46.4273 19.7179 52.2682 0.880869C52.3495 0.59628 52.4579 0.325244 52.5799 0C79.3041 5.28521 106.015 10.5433 132.807 15.815C132.454 16.9262 132.129 17.9833 131.79 19.0403C124.012 43.0406 116.287 67.0816 108.413 91.0683C105.31 100.541 101.895 109.919 98.6019 119.337C98.114 120.733 97.5719 122.129 96.9079 123.457C96.5013 124.27 95.878 125.016 95.241 125.68C94.0213 126.94 92.8152 128.255 91.4465 129.339C88.2076 131.886 84.3996 132.862 80.3476 132.984C74.2086 133.174 68.3677 131.642 62.6353 129.65C56.415 127.482 50.5471 124.555 44.652 121.655C38.1878 118.484 31.71 115.313 25.3136 111.992C22.82 110.705 20.2859 109.309 18.1582 107.493C14.4044 104.281 12.0192 100.175 11.5991 95.0796C11.1655 89.8622 11.4094 84.6854 12.087 79.5086C12.1006 79.3866 12.1548 79.2782 12.209 79.102C14.1333 79.9693 16.017 80.8367 17.9143 81.6904C33.2279 88.6696 48.555 95.6488 63.8821 102.614C64.5326 102.913 64.7359 103.157 64.5732 103.915C63.8143 107.344 63.4755 110.813 63.9498 114.323C64.3157 117.006 65.0882 119.581 67.2836 121.33C69.479 123.064 72.0403 124.175 74.7778 124.785C77.583 125.422 79.8597 124.311 81.8247 122.359C83.7626 120.435 85.2398 118.172 86.5407 115.814C90.1591 109.268 92.8017 102.303 95.3494 95.2965C101.272 78.9529 106.489 62.3791 111.422 45.7239C113.265 39.4765 115.04 33.2155 116.843 26.9681C116.883 26.8597 116.91 26.7378 116.978 26.5074Z"
-                fill="white"
-              />
-              <path
-                d="M7.38451 7.39941C8.99718 10.7738 10.5827 14.0534 12.1548 17.3329C21.2616 36.3326 30.3684 55.3187 39.5023 74.3048C39.8411 74.9959 39.7192 75.4025 39.2313 75.8904C37.0359 78.0451 34.3662 79.1563 31.3441 79.468C31.168 79.4816 30.8698 79.1834 30.775 78.9802C29.0945 75.4702 27.4277 71.9603 25.7743 68.4504C17.2502 50.4536 8.73969 32.4703 0.202039 14.487C-0.136757 13.7688 -0.0689977 13.4164 0.554386 12.9286C2.84465 11.1397 5.06715 9.28312 7.38451 7.39941Z"
-                fill="white"
-              />
-              <path
-                d="M96.5691 57.162C96.2574 58.6527 96.0135 59.913 95.7425 61.1733C95.2952 63.2739 95.485 63.0977 93.4793 62.5827C84.0472 60.1163 74.6152 57.6363 65.1966 55.1699C64.2616 54.9259 64.1667 54.7633 64.3564 53.8147C64.641 52.4324 64.912 51.0501 65.2102 49.6678C65.3864 48.8412 65.5761 48.7327 66.3892 48.9496C76.133 51.4973 85.8767 54.0586 95.6069 56.6335C95.9728 56.7012 96.2845 56.9994 96.5691 57.162Z"
-                fill="white"
-              />
-              <path
-                d="M101.136 43.7858C100.906 44.897 100.635 46.2793 100.336 47.6616C100.025 49.1523 100.011 49.1523 98.5612 48.7729C89.0343 46.2793 79.5209 43.7858 69.9939 41.2922C68.8827 41.0077 68.8149 40.8992 69.0453 39.8151C69.3299 38.4328 69.6416 37.0641 69.9126 35.6682C70.0481 34.9771 70.4005 34.8416 71.0239 35.0042C80.8083 37.579 90.5927 40.1403 100.377 42.7152C100.784 42.8236 101.217 42.932 101.136 43.7858Z"
-                fill="white"
-              />
-              <path
-                d="M58.7866 71.9196C59.1254 70.2933 59.4642 68.5994 59.8572 66.9189C59.9792 66.404 60.4128 66.4717 60.8329 66.5801C65.1424 67.7185 69.4519 68.8297 73.7614 69.9681C79.1957 71.391 84.6299 72.814 90.0642 74.2505C91.0806 74.5215 91.1484 74.6299 90.9451 75.6463C90.6605 77.0286 90.3759 78.4109 90.1049 79.7932C89.9829 80.4437 89.7254 80.7012 88.9801 80.5114C79.2228 77.9366 69.4519 75.3888 59.681 72.8275C59.2338 72.692 58.7595 72.6107 58.7866 71.9196Z"
-                fill="white"
-              />
-              <path
-                d="M58.2852 55.7797C54.4635 55.7662 51.9293 51.4025 53.6504 47.8113C55.2495 44.4504 59.1389 43.6509 61.7951 46.1308C63.3942 47.6351 63.9227 50.2506 63.0825 52.3918C62.2694 54.4381 60.3721 55.7797 58.2852 55.7797Z"
-                fill="white"
-              />
-              <path
-                d="M68.571 35.4378C68.5846 38.4869 66.213 41.0347 63.3671 41.0211C60.5483 41.0076 58.2039 38.5005 58.1903 35.4784C58.1768 32.4428 60.5619 29.8815 63.4078 29.8951C66.2265 29.9222 68.5575 32.4157 68.571 35.4378Z"
-                fill="white"
-              />
-              <path
-                d="M52.1191 73.9933C49.3003 73.9255 47.0913 71.5946 46.9829 68.559C46.8745 65.415 49.4087 62.4743 52.8644 62.9079C54.8159 63.1518 56.5641 64.7645 57.1604 67.0141C57.9328 69.9007 56.2795 72.9363 53.4336 73.7629C53.0135 73.8984 52.5527 73.9255 52.1191 73.9933Z"
-                fill="white"
-              />
-              <path
-                d="M41.63 81.5415C42.1721 84.5636 42.7277 87.7076 43.3104 91.0549C40.3426 88.6427 37.5102 86.3389 34.6372 84.0079C35.9111 83.7369 37.1443 83.5878 38.2827 83.1813C39.4346 82.7747 40.4916 82.1107 41.63 81.5415Z"
-                fill="white"
-              />
-            </svg>
-          </div>
-          <div class="popup-modal-header">
-            <h2>Auhtorization</h2>
-          </div>
-          <div class="popup-modal-body">
-            <p>
-              I give MACSIS permission to bill my credit card at regular
-              [monthly] intervals. I am aware that my details will be stored for
-              future transactions on my account.
-            </p>
-          </div>
-          <div class="popup-modal-footer">
-            <button class="popup-modal-button">I Authorize</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const popupModalContainer = document.getElementById(
-          "popup-modal-container"
-        );
-
-        setTimeout(() => {
-          popupModalContainer.style.display = "flex";
-          countdownTimer();
-        }, 1000);
-      });
-    </script>
+    </footer>
   </body>
 </html>
