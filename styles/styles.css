@@ -113,6 +113,7 @@ footer {
 }
 
 .welcome_page .centered-text {
+  font-weight: 500;
   margin-top: 30px;
 }
 
@@ -174,7 +175,7 @@ footer {
 .email_page .centered-text,
 .email_subscription_page .centered-text,
 .QR_modal_page .centered-text {
-  margin-top: 14px;
+  margin-top: 20px;
 }
 
 .email_page .content form,
@@ -247,12 +248,14 @@ footer {
 
 /* Email Found & Not Found Modal */
 .email_found_page,
-.email_not_found_page {
+.email_not_found_page,
+.payment-lookup-icon-container {
   position: relative;
 }
 
-.payment-lookup-icon-container {
-  position: relative;
+.email_found_page .popup-modal,
+.email_not_found_page .popup-modal {
+  height: 80%;
 }
 
 .popup-modal-content .top-half {
@@ -283,7 +286,7 @@ footer {
 }
 
 .status-circle-x {
-  background-color: red;
+  background-color: #fe0000;
   font-weight: 900;
 }
 
@@ -305,21 +308,19 @@ footer {
 .amount_page h1 {
   font-size: 48px;
   font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 0;
 }
 
 .categories-section,
 .amount-section {
   display: grid;
   grid-template-columns: repeat(2, 250px);
-  gap: 48px;
+  gap: 24px;
 }
 
 .categories-item {
   border: 1px solid #dddddd;
   border-radius: 8px;
-  height: 300px;
+  height: 260px;
   background-color: white;
 }
 
@@ -329,9 +330,8 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 224px;
+  height: 180px;
   border-radius: 8px 8px 0 0;
-  transition: ease 0.3s;
 }
 
 .categories-item .image-section:hover {
@@ -371,7 +371,7 @@ footer {
   border-radius: 8px;
   border: 3px solid white;
   width: 100%;
-  height: 254px;
+  height: 190px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,7 +433,7 @@ footer {
   padding: 36px 24px;
 }
 
-.amount_page .bottom-column-2 {
+.bottom-back-button {
   width: 121px;
   border: 2px solid white;
   gap: 1rem;
@@ -443,7 +443,6 @@ footer {
 /* Payment Page */
 .payment_page .content {
   width: 100%;
-  margin-top: 5rem;
 }
 
 .payment-card {
@@ -451,12 +450,12 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   width: 610px;
-  height: 300px;
+  height: 260px;
   background-color: var(--primary-color);
   border-radius: 16px;
   background-image: url(../assets/payment-background.png);
   background-size: cover;
-  padding: 40px 20px 20px 40px;
+  padding: 20px;
 }
 
 .payment-card h1 {
@@ -522,7 +521,7 @@ footer {
 }
 
 .payment-method-img {
-  margin-top: 3rem;
+  height: 50%;
 }
 
 .payment_page h4 {
@@ -530,7 +529,6 @@ footer {
   text-align: center;
   font-weight: 400;
   font-size: 36px;
-  margin-top: 1rem;
 }
 
 /* Payment Succeeded Modal */
@@ -596,7 +594,7 @@ footer {
   text-decoration: none;
   border-radius: 8px;
   margin-bottom: 20px;
-  padding: 0 0 10px 5px;
+  padding: 0 0 10px 10px;
 }
 
 .donation-basis-item p {
@@ -639,20 +637,27 @@ footer {
 }
 
 /* QR Code Modal */
+.QR_modal_page .payment-lookup-icon-container img {
+  height: 80%;
+  margin-top: 20px;
+}
+
 .popup-modal-header-QR {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
-  margin-bottom: 50px;
   width: 80%;
 }
 
 .popup-modal-body-QR {
-  margin-top: 90px;
   text-align: center;
   font-size: 24px;
   font-weight: 400;
   width: 70%;
+}
+
+.QR_modal_page .popup-modal-button {
+  margin-top: 50px;
 }
 
 /* Payment Failed Page */
@@ -672,7 +677,15 @@ footer {
   font-size: 48px;
   font-weight: 700;
   margin-top: 3rem;
-  margin-bottom: 0;
+}
+
+/* Privacy Page */
+.privacy_page .content {
+  overflow: scroll;
+  text-align: left;
+  width: 90%;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 /* Popup Modal */
@@ -717,9 +730,9 @@ footer {
 
 .popup-modal-header {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 65px;
+  margin-top: 15px;
   width: 80%;
 }
 
@@ -729,13 +742,6 @@ footer {
   font-size: 24px;
   font-weight: 700;
   width: 75%;
-}
-
-.popup-modal-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 6rem;
 }
 
 .popup-modal-button {
@@ -759,19 +765,11 @@ footer {
   /* Welcome Page */
   .welcome-icons img {
     height: auto;
-    margin-top: 124px;
+    margin-top: 65px;
   }
 
   .welcome_page h1 {
-    margin-top: 121px;
-  }
-
-  .welcome_page .centered-text {
-    margin-top: 49px;
-  }
-
-  .welcome_page h2 {
-    margin-top: 33px;
+    margin-top: 60px;
   }
 
   /* Payment Lookup Page */
@@ -780,7 +778,7 @@ footer {
   }
 
   .payment_lookup_page .content .top-half {
-    margin-top: 124px;
+    margin-top: 65px;
   }
 
   .payment_lookup_page h1 {
@@ -794,13 +792,18 @@ footer {
   /* Email Page */
   .email-icons img {
     height: 9rem;
-    margin-top: 125px;
+    margin-top: 65px;
   }
 
   .email_page h1,
   .email_subscription_page h1,
   .QR_modal_page h1 {
     margin-top: 105px;
+  }
+
+  .email_page .centered-text,
+  .email_subscription_page .centered-text {
+    margin-top: 50px;
   }
 
   .email_page .input-container,
@@ -832,9 +835,66 @@ footer {
     font-size: 16px;
   }
 
+  /* Email Found & Not Found Modal */
+  .email_found_page .popup-modal,
+  .email_not_found_page .popup-modal {
+    height: 65%;
+  }
+
+  .popup-modal-header {
+    margin-top: 65px;
+  }
+
+  .email_not_found_page .popup-modal-header {
+    font-size: 2rem;
+  }
+
+  /* Categories & Amount Pages */
+  .categories_page h1,
+  .amount_page h1 {
+    margin-top: 65px;
+  }
+
+  .categories-section,
+  .amount-section {
+    gap: 48px;
+  }
+
+  .categories-item {
+    height: 300px;
+  }
+
+  .categories-item .image-section {
+    height: 224px;
+  }
+
+  .amount-item {
+    height: 254px;
+  }
+
+  /* Payment Page */
+  .payment_page .content {
+    margin-top: 65px;
+  }
+
+  .payment-card {
+    height: 300px;
+    padding: 40px 20px 20px 40px;
+  }
+
+  .payment-method-img {
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .payment_page h4 {
+    margin-top: 1rem;
+  }
+
   /* Payment Success Page */
+  .payment_success_page .centered-text,
   .payment_success_page .close-btn {
-    margin-top: 50px;
+    margin-top: 90px;
   }
 
   /* Donation Basis Page */
@@ -856,12 +916,35 @@ footer {
     height: 100%;
   }
 
+  /* QR Code Modal */
+  .QR_modal_page .payment-lookup-icon-container img {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .popup-modal-body-QR {
+    margin-top: 100px;
+  }
+
+  .QR_modal_page .popup-modal-button {
+    margin-top: 100px;
+  }
+
   /* Payment Failed Page */
   .payment_failed_page .content {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   .payment_failed_page .centered-text {
     margin-top: 80px;
+  }
+
+  /* Privacy Page */
+  .privacy_page .content {
+    gap: 30px;
+  }
+
+  .privacy_page .content > * {
+    flex: 0;
   }
 }
