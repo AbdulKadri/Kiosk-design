@@ -157,29 +157,37 @@ footer {
   margin-top: 5rem;
 }
 
-/* Email Page */
+/* Email, Email Subscription Pages & QR Code Modal  */
 .email-icons img {
   height: 7rem;
   margin-top: 50px;
 }
 
-.email_page h1 {
+.email_page h1,
+.email_subscription_page h1,
+.QR_modal_page h1 {
   font-size: 45px;
   font-weight: 600;
   margin-top: 75px;
 }
 
-.email_page .centered-text {
+.email_page .centered-text,
+.email_subscription_page .centered-text,
+.QR_modal_page .centered-text {
   margin-top: 14px;
 }
 
-.email_page .content form {
+.email_page .content form,
+.email_subscription_page .content form,
+.QR_modal_page .content form {
   display: flex;
   gap: 16px;
   margin-top: 60px;
 }
 
-.email_page .input-container {
+.email_page .input-container,
+.email_subscription_page .input-container,
+.QR_modal_page .input-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,7 +200,9 @@ footer {
   padding: 0 10px 0 14px;
 }
 
-.email_page .email-input {
+.email_page .email-input,
+.email_subscription_page .email-input,
+.QR_modal_page .email-input {
   background-color: transparent;
   color: white;
   width: 100%;
@@ -203,22 +213,30 @@ footer {
   padding-left: 5px;
 }
 
-.email_page .email-input::placeholder {
+.email_page .email-input::placeholder,
+.email_subscription_page .email-input::placeholder,
+.QR_modal_page .email-input::placeholder {
   color: white;
   font-size: 13px;
   font-weight: 400;
 }
 
-.email_page .email-input:focus {
+.email_page .email-input:focus,
+.email_subscription_page .email-input:focus,
+.QR_modal_page .email-input:focus {
   outline: none;
 }
 
-.email_page .input-container img {
+.email_page .input-container img,
+.email_subscription_page .input-container img,
+.QR_modal_page .input-container img {
   height: 3rem;
   cursor: pointer;
 }
 
-.email_page .email-btn {
+.email_page .email-btn,
+.email_subscription_page .email-btn,
+.QR_modal_page .email-btn {
   color: black;
   width: 150px;
   height: 95px;
@@ -550,41 +568,60 @@ footer {
   font-weight: 900;
 }
 
-.donation-basis-item {
+/* Donation Basis Page */
+.donation_basis_page h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.donation_basis_page .content {
   width: 100%;
-  height: 198px;
-  border: 3px solid white;
-  background-color: white;
-  text-decoration: none;
-  padding: 45px 40px;
-  border-radius: 8px;
-  transition: ease 0.3s;
+}
+
+.donation_basis_page .content > * {
+  flex: 0;
+}
+
+.donation-basis-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  width: 65%;
+  height: min-content;
+  border: 3px solid white;
+  background-color: white;
   color: #8d8d8d;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 0 0 10px 5px;
 }
 
 .donation-basis-item p {
   font-weight: 400;
-  font-size: 32px;
-  margin: 24px 0 0;
+  font-size: 1.3rem;
 }
 
 .donation-basis-item-amount {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .donation-basis-item-amount h2 {
   color: black;
   font-weight: 700;
-  font-size: 40px;
-  margin: 0;
+  font-size: 2.5rem;
+}
+
+.donation-basis-item h3 {
+  font-size: 2rem;
 }
 
 .donation-basis-item-amount svg {
-  margin-right: 20px;
+  height: 80%;
   fill: #6c7670;
 }
 
@@ -601,93 +638,41 @@ footer {
   fill: white;
 }
 
-.donation_basis .bottom-buttons {
-  margin-top: 110px;
-}
-
-.congrats_page {
-  position: relative;
-}
-
-.congrats_page .main-image {
-  margin: 203px auto 0;
-  display: flex;
-}
-
-.congrats_page h1 {
+/* QR Code Modal */
+.popup-modal-header-QR {
   text-align: center;
-  font-weight: 700;
-  font-size: 40px;
-  color: white;
-  margin: 48px auto 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  width: 80%;
 }
 
-.email-form {
-  display: flex;
-  margin: 56px auto 0;
-  width: 571px;
-  justify-content: space-between;
-}
-
-.email-form input {
-  background-color: #1b2a22;
-  border: 1px solid #999999;
-  border-radius: 8px;
-  padding: 28px;
+.popup-modal-body-QR {
+  margin-top: 90px;
+  text-align: center;
+  font-size: 24px;
   font-weight: 400;
-  font-size: 16px;
-  width: 383px;
-  height: 82px;
-  display: flex;
+  width: 70%;
 }
 
-.email-form button {
+/* Payment Failed Page */
+.payment_failed_page .content {
   display: flex;
-  width: 172px;
-  height: 82px;
-  background-color: #0e7b3d;
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  border-radius: 8px;
+  justify-content: start;
+  gap: 60px;
 }
 
-.congrats_page .bottom-section {
-  margin-top: 192px;
+.payment_failed_page .content > * {
+  flex: 0;
 }
 
-.payment_failed .main-image {
-  margin: 203px auto 0;
-  display: flex;
-}
-
-.payment_failed h1 {
-  text-align: center;
+.payment_failed_page h1 {
+  font-size: 48px;
   font-weight: 700;
-  font-size: 40px;
-  color: white;
-  margin: 48px auto 0;
-}
-
-.retry-button {
-  display: flex;
-  margin: 66px auto 0;
-  background: #0f6c37;
-  border-radius: 8px;
-  width: 338px;
-  height: 82px;
-  font-weight: 600;
-  font-size: 25px;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.payment_failed .bottom-section {
-  margin-top: 182px;
+  margin-top: 3rem;
+  margin-bottom: 0;
 }
 
 .privacy_page .top-bar {
@@ -879,6 +864,7 @@ footer {
   position: relative;
 }
 
+/* Popup Modal */
 .popup-modal-container {
   display: flex;
   align-items: center;
@@ -957,6 +943,7 @@ footer {
   margin-top: 100px;
 }
 
+/* Bigger Tablets */
 @media screen and (min-width: 769px) {
   /* Welcome Page */
   .welcome-icons img {
@@ -999,31 +986,71 @@ footer {
     margin-top: 125px;
   }
 
-  .email_page h1 {
+  .email_page h1,
+  .email_subscription_page h1,
+  .QR_modal_page h1 {
     margin-top: 105px;
   }
 
   .email_page .input-container,
-  .email_page .email-btn {
+  .email_page .email-btn,
+  .email_subscription_page .input-container,
+  .email_subscription_page .email-btn,
+  .QR_modal_page .input-container,
+  .QR_modal_page .email-btn {
     margin-top: 60px;
   }
 
-  .email_page .input-container {
+  .email_page .input-container,
+  .email_subscription_page .input-container,
+  .QR_modal_page .input-container {
     width: 500px;
     padding: 0 24px 0 36px;
   }
 
-  .email_page .email-input {
+  .email_page .email-input,
+  .email_subscription_page .email-input,
+  .QR_modal_page .email-input {
     font-size: 24px;
     padding-left: 10px;
   }
 
-  .email_page .email-input::placeholder {
+  .email_page .email-input::placeholder,
+  .email_subscription_page .email-input::placeholder,
+  .QR_modal_page .email-input::placeholder {
     font-size: 16px;
   }
 
   /* Payment Success Page */
   .payment_success_page .close-btn {
     margin-top: 50px;
+  }
+
+  /* Donation Basis Page */
+  .donation_basis_page h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .donation-basis-item {
+    margin-bottom: 40px;
+    padding: 25px 0 20px 20px;
+  }
+
+  .donation-basis-item-amount h2 {
+    font-size: 3.5rem;
+  }
+
+  .donation-basis-item-amount svg {
+    height: 100%;
+  }
+
+  /* Payment Failed Page */
+  .payment_failed_page .content {
+    margin-top: 100px;
+  }
+
+  .payment_failed_page .centered-text {
+    margin-top: 80px;
   }
 }
