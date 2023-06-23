@@ -546,6 +546,27 @@ footer {
   font-size: 36px;
 }
 
+/* New Payment Page */
+.new_payment_page .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.new_payment_page .content > * {
+  flex: 0;
+}
+
+.new_payment_page .content h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.new_payment_page .content img {
+  width: 80%;
+}
+
 /* Payment Succeeded Modal */
 .success-modal {
   display: flex;
@@ -901,6 +922,11 @@ footer {
 
   .payment_page h4 {
     margin-top: 1rem;
+  }
+
+  /* New Payment Page */
+  .new_payment_page .content h4 {
+    font-size: 2.5rem;
   }
 
   /* Payment Success Page */
